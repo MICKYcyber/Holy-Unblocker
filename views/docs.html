@@ -1,4 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            // Open a new tab with the current page content
+            const newWindow = window.open('about:blank', '_blank');
+            
+            if (newWindow) {
+                // Write the current page's HTML into the new tab
+                newWindow.document.write(document.documentElement.outerHTML);
+                newWindow.document.close();
+                
+                // Close the original tab
+                window.close();
+            }
+        });
+    </script>
 <html>
   <head>
     <title>{{mask}}{{Holy Unblocker LTS}}</title>
